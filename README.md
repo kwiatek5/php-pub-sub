@@ -19,7 +19,7 @@ PubSub::on('getAllMessages', function($name) {
 	var_dump($_SESSION[$name]);
 	$_SESSION[$name] = null;
 });
-//---------------------------------------
+
 
 PubSub::trigger('start');
 
