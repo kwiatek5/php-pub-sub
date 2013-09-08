@@ -1,3 +1,5 @@
+```php
+
 session_start();
 
 PubSub::on('start', function() {
@@ -41,3 +43,4 @@ try {
 	echo $e->getMessage() . "\n";
 }
 
+```
