@@ -2,10 +2,6 @@
 
 namespace KW5\PubSub;
 
-class PubSubException extends Exception {
-	
-}
-
 class PubSub {
 	private static $events = array();
 
