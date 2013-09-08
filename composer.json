@@ -1,0 +1,20 @@
+{
+  "name": "kwiatek5/php-pub-sub",
+  "description": "PubSub for PHP",
+  "keywords": ["event", "pubsub"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kwiatek5",
+      "email": "kwiatek5@vp.pl"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "KW5": "src/"
+    }
+  }
+}
