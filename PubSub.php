@@ -22,7 +22,7 @@ class PubSub {
 			array_shift($params);
 			return call_user_func_array(self::$events[$eventName], $params);
 		} else {
-			throw new PubSubException("Event doesn't exists!");
+			throw new PubSubException(sprintf('Event "%s" does not exists!', $eventName));
 		}
 	}
 }
@@ -64,5 +64,10 @@ PubSub::trigger('addMessage', 'loremMessages', 'at molestie ligula luctus et');
 
 PubSub::trigger('getAllMessages', 'loremMessages');
 
-PubSub::trigger('stop');
+PubSub::off('stop');
+try {
+	PubSub::trigger('stop');
+} catch (PubSubException $e) {
+	echo $e->getMessage() . "\n";
+}
 
