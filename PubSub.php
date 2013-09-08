@@ -27,10 +27,9 @@ class PubSub {
 	}
 }
 
+//---------------------------------------
 session_start();
 
-
-//---------------------------------------
 PubSub::on('start', function() {
 	echo "Let's go!\n";
 });
