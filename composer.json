@@ -1,5 +1,5 @@
 {
-  "name": "kwiatek5/php-pub-sub",
+  "name": "KW5/PubSub",
   "description": "PubSub for PHP",
   "keywords": ["event", "pubsub"],
   "license": "MIT",
