@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-0": {
-      "KW5": "src/"
+      "KW5\\PubSub": "src/"
     }
   }
 }
